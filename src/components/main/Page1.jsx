@@ -1,9 +1,10 @@
-function Page1() {
-  return (
-    <div>
-      Page1 입니다
-    </div>
-  );
+function Page1 (){
+    return (
+        <div>
+            <h1>Page 1</h1>
+            <p>This is the content of Page 1.</p>
+        </div>
+    );
 }
 
 export default Page1;
