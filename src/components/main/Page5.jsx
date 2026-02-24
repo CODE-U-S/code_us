@@ -2,7 +2,7 @@ import "./css/Page5.css";
 
 function page5() {
   const members = [
-    { name: "조현서", gen: "3기 멤버", role: "SW", img: "/member1.jpg" },
+    { name: "조현서", gen: "3기 멤버", role: "SW", img: "/img/member1.jpg" },
     { name: "이제희", gen: "3기 멤버", role: "SW", img: "/member2.jpg" },
     { name: "임하정", gen: "3기 멤버", role: "SW", img: "/member3.jpg" },
     { name: "김주람", gen: "3기 멤버", role: "SW", img: "/member4.jpg" },
