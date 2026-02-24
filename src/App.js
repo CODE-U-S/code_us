@@ -24,7 +24,7 @@
 
 // export default App;
 
-import Page1 from "./components/main/page3.jsx";
+import Page1 from "./components/main/Page3.jsx";
 
 function App() {
   return (
