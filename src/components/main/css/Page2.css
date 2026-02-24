@@ -1,0 +1,81 @@
+.page2 {
+  background-color: #000;
+  color: #fff;
+  padding: 120px 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page2-header h1 {
+  font-size: 80px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #ffffff, #888888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.page2-header p {
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1c1c1f, #121214);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.08);
+}
+
+.card-number {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.card-body {
+  margin-top: 60px;
+}
+
+.mock-image {
+  height: 120px;
+  border-radius: 12px;
+  background: #2a2a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
