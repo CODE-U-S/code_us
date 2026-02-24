@@ -24,11 +24,11 @@
 
 // export default App;
 
-import Page1 from "./components/main/Page3.jsx";
+import Page3 from "./components/main/Page3.jsx";
 
 function App() {
   return (
-    <Page3 />
+    <Page3/>
   );
 }
 
