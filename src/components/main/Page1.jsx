@@ -5,6 +5,9 @@ import "./css/Page1.css";
 function Page1() {
   return (
     <div className="page1">
+      <div className="bg-image">
+        {/*<img src="/page1-bg.png" alt="Background" style={{ width: "500px" }}/>*/}
+      </div>
       {/* 헤더 */}
       <header className="header">
         <img src="/logo.png" alt="Code-Us" className="logo" style={{ width: "120px" }} />

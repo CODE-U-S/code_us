@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* 전체 배경 */
 .page1 {
   min-height: 100vh;
@@ -9,6 +15,29 @@
   );
   color: white;
   font-family: sans-serif;
+  position: relative;
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 87.1275rem;
+  height: 28.05925rem;
+
+  background-image: url("/public/page1-bg.png"); /* 네 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+}
+
+/* 글씨는 위로 */
+.header,
+.hero {
+  position: relative;
+  z-index: 1;
+  color: white;         /* 배경 어두우면 필요 */
 }
 
 /* 헤더 */
@@ -50,6 +79,16 @@
   margin-top: 160px;
 }
 
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
 .hero h1 {
   font-size: 52px;
   font-weight: 700;
@@ -72,11 +111,12 @@
   font-size: 16px;
   border-radius: 30px;
 
-  border: 1px solid #444;
+  border: 1px solid #444444;
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
 
   cursor: pointer;
+  background: #191919;
 }
 
 .apply-btn:hover {
