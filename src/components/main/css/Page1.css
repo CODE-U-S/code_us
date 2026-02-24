@@ -1,0 +1,84 @@
+/* 전체 배경 */
+.page1 {
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at bottom,
+    #1c2330 0%,
+    #0b0b0b 60%,
+    #000 100%
+  );
+  color: white;
+  font-family: sans-serif;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 48px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  font-size: 15px;
+}
+
+.nav span {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.nav span:hover {
+  opacity: 1;
+}
+
+.blog .arrow {
+  margin-left: 4px;
+}
+
+/* 히어로 영역 */
+.hero {
+  text-align: center;
+  margin-top: 160px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #f5c400;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* 버튼 */
+.apply-btn {
+  padding: 14px 40px;
+  font-size: 16px;
+  border-radius: 30px;
+
+  border: 1px solid #444;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
