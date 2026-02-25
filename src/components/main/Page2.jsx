@@ -30,12 +30,12 @@ export default function Page2() {
           <span className="card-number">02</span>
           <div className="card-body">
             <img
-              src="/java-code.png"
-              alt="java code"
+              src="/design.png"
+              alt="design"
               className="code-img"
             />
-            <h3>실무 이론 & 실습</h3>
-            <p>시대의 변화에 대비하고 새로운 기술들을 배울 수 있는 기회</p>
+            <h3>실전 중심 제작 과정</h3>
+            <p>배운 내용을 직접 만들어보며 익히는 과정</p>
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -33,3 +34,19 @@ function App() {
 }
 
 export default App; 
+=======
+import React from "react";
+import Page6 from "./components/main/Page6"; 
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      
+      <Page6 />
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> 8f252fccf9445ed1fc556575e41743a9259085ad
