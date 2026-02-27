@@ -27,7 +27,7 @@ function Page1() {
         <h1>
           <span className="highlight">5기</span> 멤버를 찾습니다
         </h1>
-        <p>실무의 길로, 함께 나아가는 IT 동아리</p>
+        <p>협업으로 완성하는 IT & Design 동아리</p>
 
         <button className="apply-btn">지원하기</button>
       </main>
