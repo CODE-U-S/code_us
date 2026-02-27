@@ -6,7 +6,6 @@ function Page1() {
   return (
     <div className="page1">
       <div className="bg-image">
-        {/*<img src="/page1-bg.png" alt="Background" style={{ width: "500px" }}/>*/}
       </div>
       {/* 헤더 */}
       <header className="header">
@@ -24,8 +23,9 @@ function Page1() {
 
       {/* 메인 히어로 영역 */}
       <main className="hero">
+        <div className="planet"></div>
         <h1>
-          <span className="highlight">4기</span> 멤버를 찾습니다
+          <span className="highlight">5기</span> 멤버를 찾습니다
         </h1>
         <p>실무의 길로, 함께 나아가는 IT 동아리</p>
 

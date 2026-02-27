@@ -7,15 +7,16 @@ html, body {
 /* 전체 배경 */
 .page1 {
   min-height: 100vh;
-  background: radial-gradient(
+  background: radial-gradient( 
     ellipse at bottom,
-    #1c2330 0%,
-    #0b0b0b 60%,
+    #1c2330 0%, /* 배경이 밝은 지점 */
+    #0b0b0b 70%, /* 배경이 어두워지는 지점 */
     #000 100%
   );
   color: white;
   font-family: sans-serif;
   position: relative;
+  overflow: hidden;
 }
 
 .bg-image {
@@ -77,6 +78,30 @@ html, body {
 .hero {
   text-align: center;
   margin-top: 160px;
+  position: relative;
+}
+
+.planet {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1050px;
+
+  width: 2300px;
+  height: 1000px;
+
+  background-color : black;
+  border-radius: 50%;
+
+  box-shadow:
+    0 -2px 6px rgba(255,255,255,0.25),
+    0 -5px 80px rgba(255,255,255,0.15),
+    0 -15px 40px rgba(255,255,255,0.08),
+      
+    inset 0 10px 30px rgba(255, 255, 255, 0.511),
+    inset 0 1px 10px white;
+
+  z-index: 1;
 }
 
 .background-image {
@@ -90,9 +115,10 @@ html, body {
 }
 
 .hero h1 {
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 75px;
+  font-weight: 850;
+  text-align : center;
+  margin-bottom: 10px;
 }
 
 .highlight {
@@ -100,15 +126,17 @@ html, body {
 }
 
 .hero p {
-  font-size: 18px;
-  color: #ccc;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
-/* 버튼 */
+/* 지원하기 버튼 */
 .apply-btn {
-  padding: 14px 40px;
-  font-size: 16px;
+  padding: 14px 80px;
+  font-size: 28px;
   border-radius: 30px;
 
   border: 1px solid #444444;
