@@ -1,3 +1,4 @@
+import "./css/Page5.css";
 function page5() {
   const members = [
     { name: "조현서", gen: "3기 멤버", role: "SW", img: "/member1.jpg" },
