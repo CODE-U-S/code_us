@@ -1,0 +1,61 @@
+.footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 60px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 왼쪽 */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 0px #888;
+}
+
+/* 가운데 */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.footer-center .copyright {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* 오른쪽 */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.version {
+  font-size: 20px;
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background-color: #888;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  opacity: 0.7;
+}
