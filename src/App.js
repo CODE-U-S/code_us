@@ -1,4 +1,3 @@
-import React from "react";
 import Main from "./pages/main";
 import "./App.css";
 
@@ -7,7 +6,7 @@ function App() {
     <div className="App">
       <Main />
     </div>
-  );
+    );
 }
 
 export default App;
