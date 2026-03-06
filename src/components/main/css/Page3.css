@@ -1,0 +1,113 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.page3 {
+    color : white;
+    align-items: center;
+    text-align: center;
+}
+
+.values-header {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.ddaom {
+    width: 120px;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 80px auto;
+    max-width: 1500px;
+}
+
+.value-item.left {
+    justify-content: flex-start;
+    text-align: left;
+    margin-left : 180px;
+    margin-top : 150px;
+}
+
+.value-item.right {
+    justify-content: flex-end;
+    text-align: right;
+    margin-right : 180px;
+    margin-top : 150px;
+}
+
+.contentl {
+    max-width: 40rem;
+}
+
+.contentl h3 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.contentl p {
+    color: #ccc;
+    line-height: 1.6;
+    word-break: keep-all;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.contentr {
+    max-width: 40rem;
+}
+
+.contentr h3 {
+    font-size: 2.5rem;
+    margin-top : 0px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.contentr p {
+    color: #ccc;
+    line-height: 1.6;
+    word-break: keep-all;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.number {
+    font-family: Pretendard;
+    font-size : 22rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
