@@ -8,7 +8,7 @@ function page5() {
     { name: "임지수", gen: "4기 멤버", role: "SW", img: "/member5.jpg" },
     { name: "박하얀", gen: "4기 멤버", role: "DE", img: "/member6.jpg" },
     { name: "진여진", gen: "4기 멤버", role: "DE", img: "/member7.jpg" },
-    { name: "박재영", gen: "3기 멤버", role: "SW", img: "/member8.jpg" },
+    { name: "박재영", gen: "3기 멤버", role: "SW", img: "/member8.png" },
     { name: "공은성", gen: "4기 멤버", role: "SW", img: "/member9.jpg" },
     { name: "최한이", gen: "4기 멤버", role: "SW", img: "/member10.jpg" },
     { name: "노가우", gen: "4기 멤버", role: "SW", img: "/member11.jpg" },

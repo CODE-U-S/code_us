@@ -1,18 +1,30 @@
 .footer {
   background-color: #0e0e0e;
   color: white;
-  padding: 60px 80px;
+  padding: 30px 60px;
+  min-height: 200px;
+  max-height: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 /* 왼쪽 */
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 0px #888;
@@ -22,13 +34,15 @@
 .footer-center {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 18px;
+  gap: 4px;
+  font-size: 16px;
+  justify-content: center;
 }
 
 .footer-center .copyright {
-  margin-top: 20px;
+  margin-top: 5px;
   color: #aaa;
+  font-size: 12px;
 }
 
 /* 오른쪽 */
@@ -36,15 +50,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 15px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .version {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .line {
-  width: 300px;
+  width: 120px;
   height: 1px;
   background-color: #888;
 }
@@ -52,7 +67,7 @@
 .icons {
   display: flex;
   gap: 20px;
-  font-size: 40px;
+  font-size: 32px;
   cursor: pointer;
 }
 

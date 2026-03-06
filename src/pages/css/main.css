@@ -12,3 +12,8 @@
   width: 100%;
   scroll-snap-align: start;
 }
+
+.main-container > .footer {
+  min-height: 200px;
+  height: 200px;
+}
