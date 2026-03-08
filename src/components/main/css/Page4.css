@@ -31,20 +31,43 @@ html, body {
 
 .card-wrapper {
   display: flex;
-  gap: 40px;    /*
-
-  overflow-x: auto;     /* 가로 스크롤 */
-  overflow-y: hidden;   /* 세로 스크롤 숨김 */
-
-  scroll-behavior: smooth;  /* 스크롤 부드럽게 이동 */
-
-  padding: 20px 0;  /* 카드 사이의 여백을 위해 패딩 추가 */
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 20px 60px;
   margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  cursor: pointer;
+}
+
+.project-card.card-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
 }
 
 /* 스크롤바 숨기기 */
 .card-wrapper::-webkit-scrollbar {
   display: none;
+}
+
+.card-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .more-btn {

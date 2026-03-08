@@ -67,7 +67,18 @@ html, body {
   opacity: 0.9;
 }
 
+.nav a {
+  cursor: pointer;
+  opacity: 0.9;
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav span:hover {
+  opacity: 1;
+}
+
+.nav a:hover {
   opacity: 1;
 }
 

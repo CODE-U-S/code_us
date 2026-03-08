@@ -17,3 +17,22 @@
   min-height: 200px;
   height: 200px;
 }
+
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.page-wrapper:last-child {
+  min-height: 200px;
+}
+
+.page-wrapper.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.page-wrapper.fade-in {
+  opacity: 1;
+}

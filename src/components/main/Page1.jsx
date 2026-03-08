@@ -15,9 +15,9 @@ function Page1() {
           <span>Introduce</span>
           <span>Project</span>
           <span>Support</span>
-          <span className="blog">
-            Blog <span className="arrow">↗</span>
-          </span>
+          <a href="https://github.com/CODE-U-S" target="_blank" rel="noopener noreferrer" className="blog">
+            Github <span className="arrow">↗</span>
+          </a>
         </nav>
       </header>
 

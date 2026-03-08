@@ -16,17 +16,33 @@
   margin-bottom: 120px;
   font-size: 48px;  
   font-weight: 700;
-  align-self: center;
   text-align: center;
+  width: 100%;
+  margin-left: -500px;
 }
 
 
 .page5-grid {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 60px;
   padding-bottom: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-inline: 80px;
+}
+
+.page5-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.page5-grid {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
@@ -49,8 +65,8 @@
 
 /* 이미지 */
 .page5-img {
-  width: 190px;
-  height: 190px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px auto;
