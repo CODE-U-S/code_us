@@ -13,33 +13,43 @@ html, body {
 }
 
 .page4-inner {
-  width: 1200px;
+  width: min(1200px, calc(100% - 24px));
   text-align: center;
   color: white;
 }
 
 .page4-title {
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 40px);
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .page4-sub {
   color: white;
-  margin-bottom: 60px;
+  margin-bottom: clamp(24px, 6vw, 60px);
 }
 
 .card-wrapper {
   display: flex;
-  gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
-  padding: 20px 60px;
+  padding: 20px clamp(8px, 4vw, 60px);
   margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: pan-x;
+}
+
+.card-wrapper:active {
+  cursor: grabbing;
 }
 
 .project-card {
@@ -47,6 +57,10 @@ html, body {
   transform: scale(0.9);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   cursor: pointer;
+  width: min(450px, 72vw);
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 16px;
 }
 
 .project-card.card-animate {
@@ -71,7 +85,8 @@ html, body {
 }
 
 .more-btn {
-  padding: 12px 40px;
+  padding: 12px clamp(24px, 4vw, 40px);
+  font-size: clamp(14px, 2vw, 16px);
   border-radius: 30px;
   border: 1px solid #333;
   background: transparent;
@@ -82,4 +97,10 @@ html, body {
 
 .more-btn:hover {
   background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: min(420px, 82vw);
+  }
 }

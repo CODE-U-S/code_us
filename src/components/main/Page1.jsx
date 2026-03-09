@@ -1,25 +1,17 @@
 
 // src/components/main/Page1.jsx
+import Header from "../Header";
+import { useNavigate } from "react-router-dom";
 import "./css/Page1.css";
 
 function Page1() {
+  const navigate = useNavigate();
+
   return (
     <div className="page1">
       <div className="bg-image">
       </div>
-      {/* 헤더 */}
-      <header className="header">
-        <img src="/logo.png" alt="Code-Us" className="logo" style={{ width: "120px" }} />
-
-        <nav className="nav">
-          <span>Introduce</span>
-          <span>Project</span>
-          <span>Support</span>
-          <a href="https://github.com/CODE-U-S" target="_blank" rel="noopener noreferrer" className="blog">
-            Github <span className="arrow">↗</span>
-          </a>
-        </nav>
-      </header>
+      <Header />
 
       {/* 메인 히어로 영역 */}
       <main className="hero">
@@ -29,7 +21,7 @@ function Page1() {
         </h1>
         <p>협업으로 완성하는 IT & Design 동아리</p>
 
-        <button className="apply-btn">지원하기</button>
+        <button className="apply-btn" onClick={() => navigate("/support")}>지원하기</button>
       </main>
     </div>
   );

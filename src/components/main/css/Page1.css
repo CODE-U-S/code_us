@@ -17,7 +17,6 @@ html, body {
   font-family: sans-serif;
   position: relative;
   overflow: hidden;
-
 }
 
 .bg-image {
@@ -35,62 +34,12 @@ html, body {
 }
 
 /* 글씨는 위로 */
-.header,
 .hero {
   position: relative;
   z-index: 1;
   color: white;         /* 배경 어두우면 필요 */
-}
-
-/* 헤더 */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 24px 48px;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 10px;
-}
-
-.nav {
-  display: flex;
-  gap: 32px;
-  font-size: 15px;
-}
-
-.nav span {
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.nav a {
-  cursor: pointer;
-  opacity: 0.9;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav span:hover {
-  opacity: 1;
-}
-
-.nav a:hover {
-  opacity: 1;
-}
-
-.blog .arrow {
-  margin-left: 4px;
-}
-
-/* 히어로 영역 */
-.hero {
   text-align: center;
   margin-top: 160px;
-  position: relative;
 }
 
 .planet {
@@ -161,4 +110,28 @@ html, body {
 
 .apply-btn:hover {
   background-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 88px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .apply-btn {
+    padding: 10px 32px;
+    font-size: 18px;
+  }
+
+  .planet {
+    display: none;
+  }
 }

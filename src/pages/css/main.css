@@ -25,7 +25,11 @@
 }
 
 .page-wrapper:last-child {
-  min-height: 200px;
+  min-height: 160px;
+}
+
+.page7-wrapper {
+  min-height: 160px;
 }
 
 .page-wrapper.fade-out {
@@ -35,4 +39,15 @@
 
 .page-wrapper.fade-in {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    scroll-snap-type: y proximity;
+  }
+
+  .page-wrapper:last-child,
+  .page7-wrapper {
+    min-height: 140px;
+  }
 }

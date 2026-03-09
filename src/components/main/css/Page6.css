@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px;
+  padding: clamp(56px, 9vw, 100px) clamp(12px, 3vw, 20px);
   font-family: 'Pretendard', sans-serif;
 }
 
 .page6-title {
-  font-size: 32px;
-  margin-bottom: 80px;
+  font-size: clamp(24px, 4.8vw, 32px);
+  margin-bottom: clamp(36px, 7vw, 80px);
 }
 .highlight { color: #fbc02d; }
 
@@ -21,15 +21,15 @@
 
 .review-card {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: clamp(28px, 6vw, 80px);
   align-items: center;
-  gap: 30px;
+  gap: clamp(12px, 3vw, 30px);
 }
 
 /* 프로필 이미지 원형 스타일 */
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: clamp(84px, 16vw, 150px);
+  height: clamp(84px, 16vw, 150px);
   border-radius: 50%;
   background-color: #eee;
   flex-shrink: 0;
@@ -39,7 +39,7 @@
 /* 말풍선 공통 스타일 */
 .bubble {
   background-color: #f9f9f9;
-  padding: 30px 40px;
+  padding: clamp(14px, 3vw, 30px) clamp(14px, 4vw, 40px);
   border-radius: 20px;
   border: 1px solid #eee;
   position: relative;
@@ -73,7 +73,7 @@
 .user-info .term { color: #bbb; margin-left: 8px; font-size: 16px; }
 
 .comment {
-  font-size: 16px;
+  font-size: clamp(13px, 2.3vw, 16px);
   line-height: 1.7;
   color: #555;
   word-break: keep-all;
@@ -91,4 +91,25 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .review-card,
+  .review-card.right-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-type .bubble::after,
+  .left-type .bubble::after {
+    display: none;
+  }
+
+  .user-info .name {
+    font-size: 18px;
+  }
+
+  .user-info .term {
+    font-size: 13px;
+  }
 }

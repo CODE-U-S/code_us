@@ -53,7 +53,7 @@ function Main() {
       <div ref={(el) => (pageRefs.current[5] = el)} className="page-wrapper fade-out">
         <Page6 />
       </div>
-      <div ref={(el) => (pageRefs.current[6] = el)} className="page-wrapper fade-out">
+      <div className="page-wrapper page7-wrapper">
         <Page7 />
       </div>
     </div>
