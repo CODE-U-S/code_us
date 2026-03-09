@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetUrl } from "../../utils/assetHelper";
 import "./css/Page2.css";
 
 export default function Page2() {
@@ -16,7 +17,7 @@ export default function Page2() {
           <span className="card-number">01</span>
           <div className="card-body">
             <img
-              src={`${import.meta.env.BASE_URL}programmerstest.png`}
+              src={getAssetUrl('programmerstest.png')}
               alt="programmerstest"
               className="code-img"
             />
@@ -30,7 +31,7 @@ export default function Page2() {
           <span className="card-number">02</span>
           <div className="card-body">
             <img
-              src={`${import.meta.env.BASE_URL}design.png`}
+              src={getAssetUrl('design.png')}
               alt="design"
               className="code-img"
             />
@@ -44,7 +45,7 @@ export default function Page2() {
           <span className="card-number">03</span>
           <div className="card-body">
             <img
-              src={`${import.meta.env.BASE_URL}java code.png`}
+              src={getAssetUrl('java code.png')}
               alt="java code"
               className="code-img"
             />

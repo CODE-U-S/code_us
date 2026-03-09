@@ -1,19 +1,20 @@
+import { getAssetUrl } from "../../utils/assetHelper";
 import "./css/Page5.css";
 function page5() {
   const members = [
-    { name: "조현서", gen: "3기 멤버", role: "SW", img: "/member1.jpg" },
-    { name: "이제희", gen: "3기 멤버", role: "SW", img: "/member2.jpg" },
-    { name: "임하정", gen: "3기 멤버", role: "SW", img: "/member3.jpg" },
-    { name: "김주람", gen: "3기 멤버", role: "SW", img: "/member4.jpg" },
-    { name: "임지수", gen: "4기 멤버", role: "SW", img: "/member5.jpg" },
-    { name: "박하얀", gen: "4기 멤버", role: "DE", img: "/member6.jpg" },
-    { name: "진여진", gen: "4기 멤버", role: "DE", img: "/member7.jpg" },
-    { name: "박재영", gen: "3기 멤버", role: "SW", img: "/member8.png" },
-    { name: "공은성", gen: "4기 멤버", role: "SW", img: "/member9.jpg" },
-    { name: "최한이", gen: "4기 멤버", role: "SW", img: "/member10.jpg" },
-    { name: "노가우", gen: "4기 멤버", role: "SW", img: "/member11.jpg" },
-    { name: "이서현", gen: "4기 멤버", role: "SW", img: "/member12.jpg" },
-    { name: "강별", gen: "4기 멤버", role: "DE", img: "/member13.jpg" },
+    { name: "조현서", gen: "3기 멤버", role: "SW", img: getAssetUrl("member1.jpg") },
+    { name: "이제희", gen: "3기 멤버", role: "SW", img: getAssetUrl("member2.jpg") },
+    { name: "임하정", gen: "3기 멤버", role: "SW", img: getAssetUrl("member3.jpg") },
+    { name: "김주람", gen: "3기 멤버", role: "SW", img: getAssetUrl("member4.jpg") },
+    { name: "임지수", gen: "4기 멤버", role: "SW", img: getAssetUrl("member5.jpg") },
+    { name: "박하얀", gen: "4기 멤버", role: "DE", img: getAssetUrl("member6.jpg") },
+    { name: "진여진", gen: "4기 멤버", role: "DE", img: getAssetUrl("member7.jpg") },
+    { name: "박재영", gen: "3기 멤버", role: "SW", img: getAssetUrl("member8.png") },
+    { name: "공은성", gen: "4기 멤버", role: "SW", img: getAssetUrl("member9.jpg") },
+    { name: "최한이", gen: "4기 멤버", role: "SW", img: getAssetUrl("member10.jpg") },
+    { name: "노가우", gen: "4기 멤버", role: "SW", img: getAssetUrl("member11.jpg") },
+    { name: "이서현", gen: "4기 멤버", role: "SW", img: getAssetUrl("member12.jpg") },
+    { name: "강별", gen: "4기 멤버", role: "DE", img: getAssetUrl("member13.jpg") },
   ];
 
   return (

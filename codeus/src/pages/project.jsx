@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "../components/Header";
+import { getAssetUrl } from "../utils/assetHelper";
 import "./css/project.css";
 
 function Project() {
@@ -12,7 +13,7 @@ function Project() {
 			subtitle: "지속 가능한 시장을 만들기 위한 챌린지",
 			description: "데일리 챌린지 ESG 포인트 상점",
 			period: "2024-01-02 ~ 2024-01-31",
-			image: "/project-1.png"
+			image: getAssetUrl("project-1.png")
 		},
 		{
 			generation: "1기",
@@ -20,7 +21,7 @@ function Project() {
 			subtitle: "여행을 더욱 스마트하게",
 			description: "여행 기록 서비스",
 			period: "2024-01-02 ~ 2024-01-31",
-			image: "/project-2.png"
+			image: getAssetUrl("project-2.png")
 		},
 		{
 			generation: "1기",
@@ -28,7 +29,7 @@ function Project() {
 			subtitle: "같이 프로젝트 하실 분 모집합니다!",
 			description: "또래 개발자들을 위한 모집 광고 서비스",
 			period: "2024-01-02 ~ 2024-01-31",
-			image: "/project-3.png"
+			image: getAssetUrl("project-3.png")
 		},
 		{
 			generation: "3기",
@@ -36,7 +37,7 @@ function Project() {
 			subtitle: "설문조사 커뮤니티",
 			description: "사람들이 만든 설문조사를 공유하는 커뮤니티 서비스",
 			period: "2025-08-05 ~ 2025-09-20",
-			image: "/survly.png"
+			image: getAssetUrl("survly.png")
 		},
 		{
 			generation: "3기",
@@ -44,7 +45,7 @@ function Project() {
 			subtitle: "아이돌MD 거래 플랫폼",
 			description: "원하는 굿즈를 사거나 팔 수 있는 아이돌MD 거래 플랫폼",
 			period: "2025-10-02 ~ 2025-11-22",
-			image: "/goodspick.png"
+			image: getAssetUrl("goodspick.png")
 		}
 	];
 

@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import { getAssetUrl } from "../utils/assetHelper";
 import "./css/Header.css";
 
 function Header() {
   return (
     <header className="header">
       <NavLink to="/">
-        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Code-Us" className="logo" style={{ width: "120px" }} />
+        <img src={getAssetUrl('logo.png')} alt="Code-Us" className="logo" style={{ width: "120px" }} />
       </NavLink>
 
       <nav className="nav">

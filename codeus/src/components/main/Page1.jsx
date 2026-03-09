@@ -2,6 +2,7 @@
 // src/components/main/Page1.jsx
 import Header from "../Header";
 import { useNavigate } from "react-router-dom";
+import { getAssetUrl } from "../../utils/assetHelper";
 import "./css/Page1.css";
 
 function Page1() {
@@ -11,7 +12,7 @@ function Page1() {
     <div className="page1">
       <div 
         className="bg-image"
-        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}page1-bg.png)` }}
+        style={{ backgroundImage: `url(${getAssetUrl('page1-bg.png')})` }}
       >
       </div>
       <Header />

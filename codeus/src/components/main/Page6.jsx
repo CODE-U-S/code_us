@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetUrl } from "../../utils/assetHelper";
 import "./css/Page6.css"; 
 
 function Page6() {
@@ -11,7 +12,7 @@ function Page6() {
         <div className="review-card left-type">
           <div className="profile-img">
             {/* public 폴더의 사진을 불러옵니다 */}
-            <img src={`${import.meta.env.BASE_URL}hye.png`} alt="김혜승" className="profile-photo" />
+            <img src={getAssetUrl('hye.png')} alt="김혜승" className="profile-photo" />
           </div>
           <div className="bubble">
             <div className="user-info">
@@ -38,14 +39,14 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src={`${import.meta.env.BASE_URL}yeon.png`} alt="채연우" className="profile-photo" />
+            <img src={getAssetUrl('yeon.png')} alt="채연우" className="profile-photo" />
           </div>
         </div>
 
         {/* 3. 이OO 님 (왼쪽) */}
         <div className="review-card left-type">
           <div className="profile-img">
-            <img src={`${import.meta.env.BASE_URL}lee.png`} alt="이OO" className="profile-photo" />
+            <img src={getAssetUrl('lee.png')} alt="이OO" className="profile-photo" />
           </div>
           <div className="bubble">
             <div className="user-info">
@@ -71,7 +72,7 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src={`${import.meta.env.BASE_URL}joo.png`} alt="최주희" className="profile-photo" />
+            <img src={getAssetUrl('joo.png')} alt="최주희" className="profile-photo" />
           </div>
         </div>
       </div>
