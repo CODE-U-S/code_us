@@ -16,7 +16,7 @@ export default function Page2() {
           <span className="card-number">01</span>
           <div className="card-body">
             <img
-              src="/programmerstest.png"
+              src={`${import.meta.env.BASE_URL}programmerstest.png`}
               alt="programmerstest"
               className="code-img"
             />
@@ -30,7 +30,7 @@ export default function Page2() {
           <span className="card-number">02</span>
           <div className="card-body">
             <img
-              src="/design.png"
+              src={`${import.meta.env.BASE_URL}design.png`}
               alt="design"
               className="code-img"
             />
@@ -44,7 +44,7 @@ export default function Page2() {
           <span className="card-number">03</span>
           <div className="card-body">
             <img
-              src="/java code.png"
+              src={`${import.meta.env.BASE_URL}java code.png`}
               alt="java code"
               className="code-img"
             />
@@ -58,7 +58,7 @@ export default function Page2() {
           <span className="card-number">04</span>
           <div className="card-body">
             <img
-              src="/project.png"
+              src={`${import.meta.env.BASE_URL}project.png`}
               alt="project"
               className="code-img"
             />

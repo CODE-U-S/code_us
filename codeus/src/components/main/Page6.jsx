@@ -11,7 +11,7 @@ function Page6() {
         <div className="review-card left-type">
           <div className="profile-img">
             {/* public 폴더의 사진을 불러옵니다 */}
-            <img src="/hye.png" alt="김혜승" className="profile-photo" />
+            <img src={`${import.meta.env.BASE_URL}hye.png`} alt="김혜승" className="profile-photo" />
           </div>
           <div className="bubble">
             <div className="user-info">
@@ -38,14 +38,14 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src="/yeon.png" alt="채연우" className="profile-photo" />
+            <img src={`${import.meta.env.BASE_URL}yeon.png`} alt="채연우" className="profile-photo" />
           </div>
         </div>
 
         {/* 3. 이OO 님 (왼쪽) */}
         <div className="review-card left-type">
           <div className="profile-img">
-            <img src="/lee.png" alt="이OO" className="profile-photo" />
+            <img src={`${import.meta.env.BASE_URL}lee.png`} alt="이OO" className="profile-photo" />
           </div>
           <div className="bubble">
             <div className="user-info">
@@ -71,7 +71,7 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src="/joo.png" alt="최주희" className="profile-photo" />
+            <img src={`${import.meta.env.BASE_URL}joo.png`} alt="최주희" className="profile-photo" />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <NavLink to="/">
-        <img src="/logo.png" alt="Code-Us" className="logo" style={{ width: "120px" }} />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Code-Us" className="logo" style={{ width: "120px" }} />
       </NavLink>
 
       <nav className="nav">
