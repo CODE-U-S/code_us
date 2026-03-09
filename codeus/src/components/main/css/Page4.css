@@ -1,0 +1,106 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.page4 {
+  min-height: 100vh;
+  background: #0b0b0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page4-inner {
+  width: min(1200px, calc(100% - 24px));
+  text-align: center;
+  color: white;
+}
+
+.page4-title {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.page4-sub {
+  color: white;
+  margin-bottom: clamp(24px, 6vw, 60px);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 20px clamp(8px, 4vw, 60px);
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: pan-x;
+}
+
+.card-wrapper:active {
+  cursor: grabbing;
+}
+
+.project-card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  cursor: pointer;
+  width: min(450px, 72vw);
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.project-card.card-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* 스크롤바 숨기기 */
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.more-btn {
+  padding: 12px clamp(24px, 4vw, 40px);
+  font-size: clamp(14px, 2vw, 16px);
+  border-radius: 30px;
+  border: 1px solid #333;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.more-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: min(420px, 82vw);
+  }
+}

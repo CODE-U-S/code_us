@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 전체 배경 */
+.page1 {
+  min-height: 100vh;
+  background: radial-gradient( 
+    ellipse at bottom,
+    #1c2330 0%, /* 배경이 밝은 지점 */
+    #0b0b0b 70%, /* 배경이 어두워지는 지점 */
+    #000 100%
+  );
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 87.1275rem;
+  height: 28.05925rem;
+
+  background-image: url("/public/page1-bg.png"); /* 네 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+}
+
+/* 글씨는 위로 */
+.hero {
+  position: relative;
+  z-index: 1;
+  color: white;         /* 배경 어두우면 필요 */
+  text-align: center;
+  margin-top: 160px;
+}
+
+.planet {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1050px;
+
+  width: 2300px;
+  height: 1000px;
+
+  background-color : black;
+  border-radius: 50%;
+
+  box-shadow:
+    0 -2px 6px rgba(255,255,255,0.25),
+    0 -5px 80px rgba(255,255,255,0.15),
+    0 -15px 40px rgba(255,255,255,0.08),
+      
+    inset 0 10px 30px rgba(255, 255, 255, 0.511),
+    inset 0 1px 10px white;
+
+  z-index: 1;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.hero h1 {
+  font-size: 75px;
+  font-weight: 850;
+  text-align : center;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #f5c400;
+}
+
+.hero p {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* 지원하기 버튼 */
+.apply-btn {
+  padding: 14px 80px;
+  font-size: 28px;
+  border-radius: 30px;
+
+  border: 1px solid #444444;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+
+  cursor: pointer;
+  background: #191919;
+}
+
+.apply-btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 88px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .apply-btn {
+    padding: 10px 32px;
+    font-size: 18px;
+  }
+
+  .planet {
+    display: none;
+  }
+}
