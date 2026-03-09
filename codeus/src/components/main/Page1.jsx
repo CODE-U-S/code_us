@@ -9,7 +9,10 @@ function Page1() {
 
   return (
     <div className="page1">
-      <div className="bg-image">
+      <div 
+        className="bg-image"
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}page1-bg.png)` }}
+      >
       </div>
       <Header />
 

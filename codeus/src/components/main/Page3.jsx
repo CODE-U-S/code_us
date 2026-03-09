@@ -4,14 +4,10 @@ function Page3() {
     return (
         <div className="page3">
             <div className="values-header">
-                <img src="image.png" alt="" className="ddaom start" />
-
                 <div className="header-text">
                     <h2>핵심 가치</h2>
                     <p>codeus는 이런 분들과 함께 나아가고 싶습니다</p>
                 </div>
-
-                <img src="image2.png" alt="" className="ddaom end" />
             </div>
 
             <div className="value-item left">
@@ -27,8 +23,6 @@ function Page3() {
                 </div>
             </div>
 
-            <img src="/Line 7.png" alt="" />
-
             <div className="value-item right">
                 <div className="contentr">
                     <h3>협업의 중요성</h3>
@@ -40,8 +34,6 @@ function Page3() {
                 </div>
                 <span className="number">02</span>
             </div>
-
-            <img src="/Line 7.png" alt="" />
 
             <div className="value-item left">
                 <span className="number">03</span>
