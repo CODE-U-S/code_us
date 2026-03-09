@@ -10,7 +10,7 @@ function Header() {
       </NavLink>
 
       <nav className="nav">
-        <NavLink to="/main" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>Introduce</NavLink>
+        <NavLink to="/" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>Introduce</NavLink>
         <NavLink to="/project" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>Project</NavLink>
         <NavLink to="/support" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>Support</NavLink>
         <a href="https://github.com/CODE-U-S" target="_blank" rel="noopener noreferrer" className="blog">
