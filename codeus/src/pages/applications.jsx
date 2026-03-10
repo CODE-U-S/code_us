@@ -158,9 +158,6 @@ function Applications() {
                 <div className="applications-title-section">
                     <h1>지원자 관리</h1>
                     <p>총 {applications.length}명</p>
-                    <p className="applications-storage-mode">
-                        저장 방식: {isFirebaseEnabled() ? "Firebase" : "로컬 브라우저"}
-                    </p>
                 </div>
                 <div className="applications-controls">
                     <input
