@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "../components/Header";
+import { addApplication } from "../services/applicationStore";
 import "./css/support.css";
 
 function Support() {
@@ -19,7 +20,7 @@ function Support() {
         return email.endsWith("@e-mirim.hs.kr");
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setEmailError("");
 
@@ -40,25 +41,16 @@ function Support() {
             return;
         }
 
-        // 기존 지원자 데이터 조회
-        const existingApplications = JSON.parse(localStorage.getItem("applications") || "[]");
-
-        // 새 지원자 추가
-        const newApplication = {
-            id: Date.now(),
-            studentId,
-            name,
-            email,
-            gender,
-            appeal,
-            submittedAt: new Date().toLocaleString("ko-KR")
-        };
-
-        existingApplications.push(newApplication);
-        localStorage.setItem("applications", JSON.stringify(existingApplications));
-
         setLoading(true);
-        setTimeout(() => {
+        try {
+            await addApplication({
+                studentId,
+                name,
+                email,
+                gender,
+                appeal
+            });
+
             setLoading(false);
             setShowModal(true);
             // 폼 초기화
@@ -67,7 +59,10 @@ function Support() {
             document.getElementById("email").value = "";
             document.getElementById("appeal").value = "";
             setGender("");
-        }, 500);
+        } catch {
+            setLoading(false);
+            setEmailError("제출 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요");
+        }
     };
 
     const handleCloseModal = () => {

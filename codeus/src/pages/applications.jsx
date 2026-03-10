@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
+import {
+    deleteApplication,
+    getApplications,
+    isFirebaseEnabled
+} from "../services/applicationStore";
 import "./css/applications.css";
 
 function Applications() {
@@ -11,6 +16,7 @@ function Applications() {
     const [error, setError] = useState("");
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [deleteTargetId, setDeleteTargetId] = useState(null);
+    const [loadError, setLoadError] = useState("");
 
     // 관리자 비밀번호 (실제로는 서버에서 검증해야 함)
     const ADMIN_PASSWORD = "code_us2024";
@@ -23,10 +29,19 @@ function Applications() {
         }
     }, []);
 
+    const loadApplications = async () => {
+        try {
+            const saved = await getApplications();
+            setApplications(saved);
+            setLoadError("");
+        } catch {
+            setLoadError("지원자 목록을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요");
+        }
+    };
+
     useEffect(() => {
         if (isAuthenticated) {
-            const saved = JSON.parse(localStorage.getItem("applications") || "[]");
-            setApplications(saved);
+            loadApplications();
         }
     }, [isAuthenticated]);
 
@@ -59,12 +74,15 @@ function Applications() {
         setShowDeleteModal(true);
     };
 
-    const confirmDelete = () => {
+    const confirmDelete = async () => {
         if (deleteTargetId) {
-            const updated = applications.filter((app) => app.id !== deleteTargetId);
-            setApplications(updated);
-            localStorage.setItem("applications", JSON.stringify(updated));
-            setSelectedApp(null);
+            try {
+                await deleteApplication(deleteTargetId);
+                await loadApplications();
+                setSelectedApp(null);
+            } catch {
+                setLoadError("지원자 삭제 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요");
+            }
         }
         setShowDeleteModal(false);
         setDeleteTargetId(null);
@@ -140,6 +158,9 @@ function Applications() {
                 <div className="applications-title-section">
                     <h1>지원자 관리</h1>
                     <p>총 {applications.length}명</p>
+                    <p className="applications-storage-mode">
+                        저장 방식: {isFirebaseEnabled() ? "Firebase" : "로컬 브라우저"}
+                    </p>
                 </div>
                 <div className="applications-controls">
                     <input
@@ -159,6 +180,11 @@ function Applications() {
             </div>
 
             <div className="applications-container">
+                {loadError && (
+                    <div className="applications-empty">
+                        <p>{loadError}</p>
+                    </div>
+                )}
                 <div className="applications-list">
                     {filteredApplications.length === 0 ? (
                         <div className="applications-empty">

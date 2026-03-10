@@ -11,11 +11,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/main" element={<Main />} />
           <Route path="/project" element={<Project />} />
           <Route path="/support" element={<Support />} />
           <Route path="/applications" element={<Applications />} />
-          <Route path="*" element={<Navigate to="/main" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </BrowserRouter>

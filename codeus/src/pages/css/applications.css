@@ -122,6 +122,15 @@
 	color: #a0a0a0;
 }
 
+.applications-storage-mode {
+	font-size: 13px !important;
+	color: #c8c8c8 !important;
+	padding: 2px 10px;
+	border: 1px solid #3a3a3a;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.03);
+}
+
 .applications-controls {
 	display: flex;
 	gap: 12px;
