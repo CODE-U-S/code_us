@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "Pretendard";
+	src: url("/Pretendard-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
 .support-page {
 	min-height: 100vh;
 	background: #0b0b0f;
@@ -144,6 +151,7 @@
 	color: #fff;
 	padding: 10px 12px;
 	font-size: 14px;
+	font-family: "Pretendard", "Noto Sans KR", sans-serif;
 	box-sizing: border-box;
 }
 
@@ -160,6 +168,8 @@
 .support-textarea {
 	min-height: 300px;
 	resize: vertical;
+	line-height: 1.65;
+	letter-spacing: 0.01em;
 }
 
 .support-gender-group {
