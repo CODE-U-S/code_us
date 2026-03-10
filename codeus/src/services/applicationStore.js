@@ -25,10 +25,22 @@ const firebaseConfig = {
 
 const hasFirebaseConfig = Object.values(firebaseConfig).every(Boolean);
 
+if (!hasFirebaseConfig) {
+  console.warn(
+    "[Firebase] 환경 변수 미설정. localStorage 모드로 동작합니다.\n" +
+    ".env 파일에 VITE_FIREBASE_API_KEY 등의 값을 입력하세요."
+  );
+}
+
 let db = null;
 if (hasFirebaseConfig) {
-  const app = initializeApp(firebaseConfig);
-  db = getFirestore(app);
+  try {
+    const app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+    console.log("[Firebase] Firestore 초기화 성공");
+  } catch (error) {
+    console.error("[Firebase] 초기화 실패:", error.message);
+  }
 }
 
 export const isFirebaseEnabled = () => Boolean(db);

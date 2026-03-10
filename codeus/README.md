@@ -20,7 +20,7 @@ npm run dev
 `support` and `applications` pages use Firebase Firestore when Firebase env vars are set.
 If env vars are not set, the app automatically falls back to browser `localStorage`.
 
-1. Copy `.env.example` to `.env`.
+1. Create `.env` file in `codeus` folder.
 2. Fill all `VITE_FIREBASE_*` values from Firebase project settings.
 3. Create a Firestore database in Firebase console.
 4. Run `npm run dev`.

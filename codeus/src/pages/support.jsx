@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import { addApplication } from "../services/applicationStore";
 import "./css/support.css";
 
 function Support() {
+    const navigate = useNavigate();
     const [gender, setGender] = useState("");
     const [emailError, setEmailError] = useState("");
     const [loading, setLoading] = useState(false);
@@ -67,6 +69,7 @@ function Support() {
 
     const handleCloseModal = () => {
         setShowModal(false);
+        navigate("/");
     };
 
     return (
