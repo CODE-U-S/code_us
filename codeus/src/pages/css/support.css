@@ -168,6 +168,7 @@
 .support-textarea {
 	min-height: 300px;
 	resize: vertical;
+	font-size: 15px;
 	line-height: 1.65;
 	letter-spacing: 0.01em;
 }
