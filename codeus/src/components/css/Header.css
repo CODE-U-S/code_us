@@ -39,6 +39,7 @@
   text-decoration: none;
   color: inherit;
   transition: opacity 0.2s ease, color 0.2s ease;
+  font-weight: 400;
 }
 
 .nav a {
@@ -56,6 +57,7 @@
 .nav-link.active {
   opacity: 1;
   color: #f5c400;
+  font-weight: 400;
 }
 
 .nav a:hover {
