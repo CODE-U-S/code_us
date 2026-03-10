@@ -4,6 +4,7 @@
 	color: #ffffff;
 	display: flex;
 	flex-direction: column;
+	padding-top: 88px;
 }
 
 .support-content {

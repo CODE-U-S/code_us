@@ -7,6 +7,7 @@ html, body {
 /* 전체 배경 */
 .page1 {
   min-height: 100vh;
+  padding-top: 88px;
   background: radial-gradient( 
     ellipse at bottom,
     #1c2330 0%, /* 배경이 밝은 지점 */
