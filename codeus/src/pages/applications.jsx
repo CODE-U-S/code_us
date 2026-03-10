@@ -237,7 +237,7 @@ function Applications() {
                                 <p>{selectedApp.gender}</p>
                             </div>
                             <div className="applications-detail-row applications-detail-appeal">
-                                <label>지원 동기 및 자기 어필</label>
+                                <label>지원 동기</label>
                                 <p>{selectedApp.appeal}</p>
                             </div>
                             <div className="applications-detail-row">

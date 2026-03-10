@@ -76,7 +76,7 @@ function Support() {
         <section className="support-page">
             <Header />
             <div className="support-content">
-                <h1>4기 모집</h1>
+                <h1>5기 모집</h1>
                 <p>학교 생활 3년 동안 같이 활동할 신입 여러분을 모집합니다</p>
                 <p>IT 분야에 대해 열정적인 포부를 가지고, 즐거운 동아리 활동을 하고 싶은 분들의 많은 지원 바랍니다</p>
             </div>
