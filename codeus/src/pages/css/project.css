@@ -8,7 +8,7 @@
 .projects-section {
 	min-height: 100vh;
 	background: #0b0b0f;
-	padding: clamp(6px, 1.8vw, 24px) clamp(24px, 5vw, 80px) clamp(24px, 4.5vw, 56px);
+	padding: clamp(20px, 2.5vw, 40px) clamp(24px, 5vw, 80px) clamp(24px, 4.5vw, 56px);
 	margin-bottom: clamp(20px, 3vw, 44px);
 }
 
