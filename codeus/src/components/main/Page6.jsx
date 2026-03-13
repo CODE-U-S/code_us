@@ -63,7 +63,7 @@ function Page6() {
         <div className="review-card right-type">
           <div className="bubble">
             <div className="user-info">
-              <span className="term">3기</span> <span className="name">최주희</span>
+              <span className="term">3기</span> <span className="name">조현서</span>
             </div>
             <p className="comment">
               저희 동아리는 매일 코딩 테스트를 풀어 올리기 때문에 코딩 실력을 쌓을 수 있습니다.<br/>
@@ -72,7 +72,24 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src={getAssetUrl('joo.png')} alt="최주희" className="profile-photo" />
+            <img src={getAssetUrl('member1.jpg')} alt="조현서" className="profile-photo" />
+          </div>
+        </div>
+
+        {/* 5. 임하정 님 (왼쪽) */}
+        <div className="review-card left-type">
+          <div className="profile-img">
+            <img src={getAssetUrl('member3.jpg')} alt="임하정" className="profile-photo" />
+          </div>
+          <div className="bubble">
+            <div className="user-info">
+              <span className="name">임하정</span> <span className="term">3기</span>
+            </div>
+            <p className="comment">
+              프로젝트를 진행하면서 실전 협업이 무엇인지 제대로 배울 수 있었습니다.<br/>
+              모르는 부분을 질문하면 선배와 동기가 함께 고민해줘서 성장 속도가 빨랐어요.<br/>
+              개발을 꾸준히 이어가고 싶은 분들에게 CODEUS를 추천합니다.
+            </p>
           </div>
         </div>
       </div>
@@ -81,7 +98,3 @@ function Page6() {
 }
 
 export default Page6;
-
-<div className="profile-img">
-  <img src="/hye.png" alt="김혜승" />
-</div>

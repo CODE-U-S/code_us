@@ -2,6 +2,11 @@ import React from "react";
 import "./css/Page7.css";
 import { FaInstagram, FaGithub } from "react-icons/fa";
 
+const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/codeus12?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  github: "https://github.com/CODE-U-S"
+};
+
 function Page7() {
   return (
     <footer className="footer">
@@ -26,8 +31,12 @@ function Page7() {
           <div className="line"></div>
 
           <div className="icons">
-            <FaInstagram />
-            <FaGithub />
+            <a className="icon-link" href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="CODEUS Instagram">
+              <FaInstagram />
+            </a>
+            <a className="icon-link" href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="CODEUS GitHub">
+              <FaGithub />
+            </a>
           </div>
         </div>
       </div>

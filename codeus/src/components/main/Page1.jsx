@@ -20,9 +20,7 @@ function Page1() {
       {/* 메인 히어로 영역 */}
       <main className="hero">
         <div className="planet"></div>
-        <h1>
-          <span className="highlight">5기</span> 멤버를 찾습니다
-        </h1>
+        <h1>CODEUS</h1>
         <p>협업으로 완성하는 IT & Design 동아리</p>
 
         <button className="apply-btn" onClick={() => navigate("/support")}>지원하기</button>

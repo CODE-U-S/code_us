@@ -7,7 +7,7 @@ export default function Page2() {
     <section className="page2">
       <div className="page2-header">
         <h1>CODEUS</h1>
-        <p>codeus 동아리는 이런 활동을 진행합니다</p>
+        <p>이런 활동을 진행합니다</p>
       </div>
 
       {/* 🔥 가로 스크롤 영역 */}

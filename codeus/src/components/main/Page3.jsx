@@ -6,7 +6,7 @@ function Page3() {
             <div className="values-header">
                 <div className="header-text">
                     <h2>핵심 가치</h2>
-                    <p>codeus는 이런 분들과 함께 나아가고 싶습니다</p>
+                    <p>CODEUS는 이런 분들과 함께 나아가고 싶습니다</p>
                 </div>
             </div>
 
