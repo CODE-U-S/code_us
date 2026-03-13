@@ -46,12 +46,12 @@
 }
 
 .page5-row::-webkit-scrollbar {
-  height: 8px;
+  display: none;
 }
 
 .page5-row {
-  -ms-overflow-style: auto;
-  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
