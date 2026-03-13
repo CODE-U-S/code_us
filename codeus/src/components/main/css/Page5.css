@@ -39,10 +39,12 @@
   justify-content: center;
   gap: clamp(28px, 4.2vw, 72px);
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: visible;
   scroll-behavior: smooth;
-  padding-left: clamp(20px, 4vw, 56px);
+  padding-left: clamp(28px, 5vw, 72px);
   padding-right: clamp(40px, 8vw, 200px);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .page5-row::-webkit-scrollbar {
