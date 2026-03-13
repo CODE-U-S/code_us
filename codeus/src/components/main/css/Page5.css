@@ -23,37 +23,22 @@
 
 
 .page5-rows {
-  width: min(1600px, calc(100% - clamp(72px, 12vw, 220px)));
+  width: min(1600px, 100%);
   max-width: 1600px;
   display: flex;
   flex-direction: column;
-  gap: clamp(28px, 4vw, 56px);
-  padding-bottom: 20px;
+  gap: clamp(28px, 4vw, 52px);
+  padding: 0 clamp(24px, 5vw, 80px) 40px;
   box-sizing: border-box;
   margin-inline: auto;
 }
 
 .page5-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(28px, 4.2vw, 72px);
-  overflow-x: auto;
-  overflow-y: visible;
-  scroll-behavior: smooth;
-  padding-left: clamp(28px, 5vw, 72px);
-  padding-right: clamp(40px, 8vw, 200px);
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.page5-row::-webkit-scrollbar {
-  display: none;
-}
-
-.page5-row {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  gap: clamp(24px, 3.6vw, 64px);
+  row-gap: clamp(28px, 4vw, 48px);
 }
 
 
@@ -110,20 +95,18 @@ html, body {
 
 @media (max-width: 1200px) {
   .page5-row {
-    justify-content: flex-start;
+    gap: clamp(20px, 3vw, 48px);
   }
 }
 
 @media (max-width: 900px) {
   .page5-row {
     gap: 24px;
-    padding-right: 24px;
   }
 }
 
 @media (max-width: 700px) {
   .page5-row {
     gap: 18px;
-    padding-left: 12px;
   }
 }
