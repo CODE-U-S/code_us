@@ -59,7 +59,7 @@ function Page6() {
           </div>
         </div>
 
-        {/* 4. 최주희 님 (오른쪽) */}
+        {/* 4. 조현서 님 (오른쪽) */}
         <div className="review-card right-type">
           <div className="bubble">
             <div className="user-info">
@@ -72,7 +72,7 @@ function Page6() {
             </p>
           </div>
           <div className="profile-img">
-            <img src={getAssetUrl('member1.jpg')} alt="조현서" className="profile-photo" />
+            <img src={getAssetUrl('choi.png')} alt="조현서" className="profile-photo" />
           </div>
         </div>
 
