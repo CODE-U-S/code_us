@@ -16,23 +16,43 @@ function page5() {
     { name: "강별", gen: "4기 멤버", role: "DE", img: getAssetUrl("member13.jpg") },
   ];
 
+  const thirdGenMembers = members.filter((member) => member.gen.startsWith("3기"));
+  const fourthGenMembers = members.filter((member) => member.gen.startsWith("4기"));
+
   return (
     <div className="page5">
       <h1 className="page5-title">동아리 부원 소개</h1>
 
-      <div className="page5-grid">
-        {members.map((member, index) => (
-          <div className="page5-card" key={index}>
-            <span className="page5-role">{member.role}</span>
+      <div className="page5-rows">
+        <div className="page5-row page5-row-third">
+          {thirdGenMembers.map((member, index) => (
+            <div className="page5-card" key={`third-${index}`}>
+              <span className="page5-role">{member.role}</span>
 
-            <div className="page5-img">
-              <img src={member.img} alt={member.name} />
+              <div className="page5-img">
+                <img src={member.img} alt={member.name} />
+              </div>
+
+              <p className="page5-gen">{member.gen}</p>
+              <p className="page5-name">{member.name}</p>
             </div>
+          ))}
+        </div>
 
-            <p className="page5-gen">{member.gen}</p>
-            <p className="page5-name">{member.name}</p>
-          </div>
-        ))}
+        <div className="page5-row page5-row-fourth">
+          {fourthGenMembers.map((member, index) => (
+            <div className="page5-card" key={`fourth-${index}`}>
+              <span className="page5-role">{member.role}</span>
+
+              <div className="page5-img">
+                <img src={member.img} alt={member.name} />
+              </div>
+
+              <p className="page5-gen">{member.gen}</p>
+              <p className="page5-name">{member.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

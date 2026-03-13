@@ -22,27 +22,34 @@
 }
 
 
-.page5-grid {
+.page5-rows {
   width: min(1600px, calc(100% - clamp(72px, 12vw, 220px)));
   max-width: 1600px;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(140px, 1fr));
-  gap: clamp(36px, 5vw, 96px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 56px);
   padding-bottom: 20px;
   box-sizing: border-box;
+  margin-inline: auto;
+}
+
+.page5-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: clamp(28px, 4.2vw, 72px);
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
   padding-left: clamp(20px, 4vw, 56px);
   padding-right: clamp(40px, 8vw, 200px);
-  margin-inline: auto;
 }
 
-.page5-grid::-webkit-scrollbar {
+.page5-row::-webkit-scrollbar {
   display: none;
 }
 
-.page5-grid {
+.page5-row {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -100,19 +107,21 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-  .page5-grid {
-    grid-template-columns: repeat(5, minmax(140px, 1fr));
+  .page5-row {
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 900px) {
-  .page5-grid {
-    grid-template-columns: repeat(4, minmax(140px, 1fr));
+  .page5-row {
+    gap: 24px;
+    padding-right: 24px;
   }
 }
 
 @media (max-width: 700px) {
-  .page5-grid {
-    grid-template-columns: repeat(3, minmax(130px, 1fr));
+  .page5-row {
+    gap: 18px;
+    padding-left: 12px;
   }
 }
