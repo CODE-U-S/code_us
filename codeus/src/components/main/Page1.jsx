@@ -1,4 +1,3 @@
-
 // src/components/main/Page1.jsx
 import Header from "../Header";
 import { useNavigate } from "react-router-dom";
@@ -10,11 +9,10 @@ function Page1() {
 
   return (
     <div className="page1">
-      <div 
+      <div
         className="bg-image"
-        style={{ backgroundImage: `url(${getAssetUrl('page1-bg.png')})` }}
-      >
-      </div>
+        style={{ backgroundImage: `url(${getAssetUrl("page1-bg.png")})` }}
+      ></div>
       <Header />
 
       {/* 메인 히어로 영역 */}
@@ -25,7 +23,9 @@ function Page1() {
         </h1>
         <p>협업으로 완성하는 IT & Design 동아리</p>
 
-        <button className="apply-btn" onClick={() => navigate("/support")}>지원하기</button>
+        <button className="apply-btn" onClick={() => navigate("/support")}>
+          지원하기
+        </button>
       </main>
     </div>
   );

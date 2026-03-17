@@ -1,5 +1,6 @@
 /* 기본 여백 제거 + 가로 스크롤 방지 */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* 화면 전체 가로 스크롤 막기 */
@@ -51,7 +52,6 @@ html, body {
   transition: 0.3s ease; /* hover 부드럽게 */
 }
 
-/* 카드에 마우스 올렸을 때 */
 .card:hover {
   transform: translateY(-25px); /* 위로 살짝 이동 */
   box-shadow: 0 20px 40px rgba(255, 255, 255, 0.08);
@@ -74,7 +74,7 @@ html, body {
 
 /* 카드 본문 영역 */
 .card-body {
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
 /* 가짜 이미지 박스 */
@@ -82,7 +82,7 @@ html, body {
   height: 120px;
   border-radius: 12px;
   background: #2a2a2e;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   color: #777;
@@ -109,7 +109,7 @@ html, body {
   overflow-y: visible; /* 이걸로 변경 */
 
   padding: clamp(16px, 3vw, 40px) clamp(8px, 2vw, 20px);
-  scroll-snap-type: x mandatory; 
+  scroll-snap-type: x mandatory;
   /* 스크롤하면 카드 단위로 딱딱 맞춰 멈춤 */
 }
 
@@ -127,7 +127,7 @@ html, body {
   min-width: clamp(220px, 70vw, 280px); /* 카드 최소 너비 (줄어들지 않음) */
   flex-shrink: 0; /* flex 줄어드는 거 방지 */
 
-  scroll-snap-align: start; 
+  scroll-snap-align: start;
   /* 스크롤 멈출 때 카드 시작점에 맞춤 */
 
   background: linear-gradient(145deg, #1c1c1f, #121214);

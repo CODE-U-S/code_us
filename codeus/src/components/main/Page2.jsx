@@ -10,14 +10,14 @@ export default function Page2() {
         <p>codeus 동아리는 이런 활동을 진행합니다</p>
       </div>
 
-      {/* 🔥 가로 스크롤 영역 */}
+      {/* 가로 스크롤 영역 */}
       <div className="slider-wrapper">
-       {/*1번째*/}
+        {/*1번째*/}
         <div className="card">
           <span className="card-number">01</span>
           <div className="card-body">
             <img
-              src={getAssetUrl('programmerstest.png')}
+              src={getAssetUrl("programmerstest.png")}
               alt="programmerstest"
               className="code-img"
             />
@@ -31,7 +31,7 @@ export default function Page2() {
           <span className="card-number">02</span>
           <div className="card-body">
             <img
-              src={getAssetUrl('design.png')}
+              src={getAssetUrl("design.png")}
               alt="design"
               className="code-img"
             />
@@ -45,7 +45,7 @@ export default function Page2() {
           <span className="card-number">03</span>
           <div className="card-body">
             <img
-              src={getAssetUrl('java code.png')}
+              src={getAssetUrl("java code.png")}
               alt="java code"
               className="code-img"
             />
@@ -54,7 +54,7 @@ export default function Page2() {
           </div>
         </div>
 
-       {/*4번째*/}
+        {/*4번째*/}
         <div className="card">
           <span className="card-number">04</span>
           <div className="card-body">
@@ -63,7 +63,7 @@ export default function Page2() {
               alt="project"
               className="code-img"
             />
-           <h3>프로젝트 & 멘토</h3>
+            <h3>프로젝트 & 멘토</h3>
             <p>포트폴리오를 위한 여러 프로젝트 진행 및 피드백 멘토링 활동</p>
           </div>
         </div>
